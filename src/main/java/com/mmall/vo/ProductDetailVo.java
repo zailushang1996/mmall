@@ -1,15 +1,13 @@
 package com.mmall.vo;
 
 import java.math.BigDecimal;
-import java.util.PrimitiveIterator;
 
 /**
- * @author LiuZX liuzhixiang
- * DATE   2018/8/27
+ * Created by geely
  */
-
 public class ProductDetailVo {
-    private Integer id;
+
+    private Integer  id;
     private Integer categoryId;
     private String name;
     private String subtitle;
@@ -17,21 +15,13 @@ public class ProductDetailVo {
     private String subImages;
     private String detail;
     private BigDecimal price;
+    private Integer stock;
     private Integer status;
     private String createTime;
     private String updateTime;
-    private Integer stock;
 
-    public Integer getStock() {
-        return stock;
-    }
-
-    public void setStock(Integer stock) {
-        this.stock = stock;
-    }
 
     private String imageHost;
-
     private Integer parentCategoryId;
 
     public Integer getId() {
@@ -96,6 +86,14 @@ public class ProductDetailVo {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public Integer getStock() {
+        return stock;
+    }
+
+    public void setStock(Integer stock) {
+        this.stock = stock;
     }
 
     public Integer getStatus() {

@@ -3,11 +3,10 @@ package com.mmall.vo;
 import java.math.BigDecimal;
 
 /**
- * @author LiuZX liuzhixiang
- * DATE   2018/8/27
+ * Created by geely
  */
-
 public class ProductListVo {
+
     private Integer id;
     private Integer categoryId;
 

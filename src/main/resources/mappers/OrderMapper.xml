@@ -37,9 +37,23 @@
         and user_id = #{userId}
     </select>
     <select id="selectByOrderNo" resultType="com.mmall.pojo.Order" parameterType="long">
-        select <include refid="Base_Column_List"/>
+        select
+        <include refid="Base_Column_List"/>
         from mmall_order
         where order_no = #{orderNo}
+    </select>
+    <select id="selectByUserId" resultType="com.mmall.pojo.Order">
+        select
+        <include refid="Base_Column_List"/>
+        from mmall_order
+        where user_id = #{userId}
+        order by create_time desc
+    </select>
+    <select id="selectAllOrder" resultType="com.mmall.pojo.Order">
+        select
+        <include refid="Base_Column_List"/>
+        from mmall_order
+        order by create_time desc
     </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
         delete from mmall_order

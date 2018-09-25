@@ -6,5 +6,9 @@
 
 3.使用maven运行插件自动生成实体类和mapper.xml文件
 
+###集成logback日志框架
+
+###pagehelper分页插件使用
+
 
 

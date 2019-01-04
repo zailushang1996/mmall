@@ -13,6 +13,7 @@ import java.io.Serializable;
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 //保证序列化json的时候,如果是null的对象,key也会消失
 public class ServerResponse<T> implements Serializable {
+    private static final long serialVersionUID = 708309692405384337L;
     /**
      * 状态码
      */

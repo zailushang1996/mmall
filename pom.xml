@@ -127,7 +127,7 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>20.0</version>
+      <version>27.0.1-jre</version>
     </dependency>
 
 
@@ -212,6 +212,12 @@
       <version>0.9.4</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+    <dependency>
+      <groupId>com.mchange</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.5.2</version>
+    </dependency>
 
     <!-- alipay -->
     <dependency>
